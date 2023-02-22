@@ -79,4 +79,11 @@ Se evidencia en el pom.xml del proyecto.
 1. Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en
 "mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
 
-`mvn exec:java -Dexec.mainClass="App.java"`
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App"`
+2. Realice elcambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. Utilizar la primera
+posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible,se debe mantener elsaludo como se
+encuentra actualmente:
+
+* Al realizar los cambios necesarios en el código y ejecutar por línea de comandos la aplicación de la siguiente forma:
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="Santiago Arevalo"`
+
