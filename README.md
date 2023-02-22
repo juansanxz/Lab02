@@ -63,3 +63,20 @@ Para ver el conjunto de archivos y directorios creados por el comando mvn ejecut
 $ tree
 En algunos sistemas operativos, este comando no funciona correctamente o puede requerir un parámetro (por ejemplo: tree /f). En caso que funcione, la
 salida muestra la estructura del proyecto,similar a como se muestra a continuación:
+<img src="/img/1.png" width="80%" height="80%"/>
+
+## AJUSTAR ALGUNAS CONFIGURACIONES EN EL PROYECTO
+1. Edite el archivo pom.xml y realize la siguiente actualización:
+Hay que cambiar la version delcompilador de Java a la versión 8, para ello, agregue la sección properties antes de la sección de
+dependencias: 
+`<properties>
+<maven.compiler.target>1.8</maven.compiler.target>
+<maven.compiler.source>1.8</maven.compiler.source>
+</properties>`
+Se evidencia en el pom.xml del proyecto.
+
+## COMPILAR Y EJECUTAR
+1. Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en
+"mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
+
+`mvn exec:java -Dexec.mainClass="App.java"`
