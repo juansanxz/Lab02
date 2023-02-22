@@ -41,8 +41,7 @@ Los pluggins son artefactos que proporcionan objetivos a maven. Se componen de u
 
 El repositorio central es una herramienta que funciona para manejar el versionamiento de proyectos. Es la ubicación predeterminada para descargar las bibliotecas de dependencias que se usarán en el proyecto.
 
-* ¿Cuál(es) de las anterioresinstruccionesse ejecutan y funcionan correctamente y por qué?
-Todas se ejecutan correctamente, pero la última opción, Hexagon, permite ejecutar satisfactoriamente lo esperado, ya que es una clase existente. 
+
 
 ## EJERCICIO DE LAS FIGURAS
 
@@ -116,3 +115,7 @@ encuentra actualmente:
 `mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.shapes.ShapeMain" -Dexec.args="Hexagon"`
 
 <img src="/img/6.png" width="80%" height="80%"/>
+
+* ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
+
+Todas se ejecutan correctamente, pero la última opción, Hexagon, permite ejecutar satisfactoriamente lo esperado, ya que es una clase existente. 
