@@ -80,10 +80,39 @@ Se evidencia en el pom.xml del proyecto.
 "mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
 
 `mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App"`
+
 2. Realice elcambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. Utilizar la primera
 posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible,se debe mantener elsaludo como se
 encuentra actualmente:
 
 * Al realizar los cambios necesarios en el código y ejecutar por línea de comandos la aplicación de la siguiente forma:
-`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="Santiago Arevalo"`
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="Santiago Arevalo"`, se obtuvo
 
+<img src="/img/2.png" width="80%" height="80%"/>
+
+## HACER EL ESQUELETO DE LA APLICACION
+* Luego de realizar las respectivas creaciones de archivos e implementación de código solicitada, se ejecutan las pruebas que solicitan a continuación:
+
+**1. Sin parámetros:**
+
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.shapes.ShapeMain"`
+
+<img src="/img/3.png" width="80%" height="80%"/>
+
+**2. Parámetro: qwerty:**
+
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.shapes.ShapeMain" -Dexec.args="qwerty"`
+
+<img src="/img/4.png" width="80%" height="80%"/>
+
+**3. Parámetro: pentagon:**
+
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.shapes.ShapeMain" -Dexec.args="pentagon"`
+
+<img src="/img/5.png" width="80%" height="80%"/>
+
+**4. Parámetro: Hexagon:**
+
+`mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.shapes.ShapeMain" -Dexec.args="Hexagon"`
+
+<img src="/img/6.png" width="80%" height="80%"/>
